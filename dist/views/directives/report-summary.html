@@ -1,0 +1,16 @@
+<div data-id="{{report._id}}" class="panel panel-default">
+  <div class="panel-heading clearfix">
+    <h5>
+      <a ng-bind="report.authors[0].identifiers.user_name" ng-href="#/citizen-card/{{report.authors[0].authority}}/{{report.authors[0].identifiers.user_name}}"></a>
+      <small ng-bind="report.produced | date:'medium'"></small>
+    </h5>
+  </div>
+  <div class="panel-body break-long-words" ng-bind="report.texts[0].original"></div>
+  <div class="panel-footer clearfix">
+    <!-- i use ng repeat below, but i am currently developing in a way
+         to have just one tag for every user -->
+    <span ng-repeat="tag in report.authors[0].alias.tags" class="label" ng-bind="tag.name" ng-class="tag.variation">
+    </span>
+    <span report-summary-buttons></span>
+  </div>
+</div>

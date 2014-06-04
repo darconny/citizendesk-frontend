@@ -1,0 +1,34 @@
+<ul class="list-group">
+  <a class="list-group-item list-group-item-info" ng-href="#/mobile-queue">
+    <span translate>Mobile reports</span>
+  </a>
+  <a class="list-group-item list-group-item-warning" ng-href="#/new-twitter-search">
+    <span translate>New Twitter search</span>
+  </a>
+  <a ng-repeat="queue in searches" class="list-group-item" ng-href="#/twitter-search/{{queue._id}}">
+    <span ng-bind="queue.description"></span>
+    <span class="badge" ng-bind="queue.reports.length"></span>
+  </a>
+  <a ng-repeat="queue in monitors" class="list-group-item list-group-item-success" ng-href="#/monitor/{{queue._id}}" ng-show="queue.user_id._id != session.identity._id">
+    <span translate>
+      {{queue.user_id.username}}'s monitor
+    </span>
+    <span class="badge" ng-bind="queue.reports.length"></span>
+  </a>
+  <a class="list-group-item list-group-item-success" ng-href="#/my-monitor">
+    <span translate>
+      Your monitor
+    </span>
+    <span class="badge" ng-bind="myMonitor.reports.length"></span>
+  </a>
+  <!--li class="list-group-item">
+      <a ng-href="#/web-queue">
+        <span>From the web</span>
+      </a>
+  </li-->
+</ul>
+<ul class="list-group">
+  <a class="list-group-item" ng-href="#/processed-queues">
+    <span translate>Processed reports</span>
+  </a>
+</ul>
