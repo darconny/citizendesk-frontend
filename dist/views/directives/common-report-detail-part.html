@@ -21,7 +21,7 @@
 <div ng-switch="largeScreen">
   <div ng-switch-when="true">
     <p class="btn-group btn-group-justified">
-      <label class="btn btn-default" ng-model="report.status" ng-class="{'btn-success': report.status=='verified'}" ng-disabled="disabled" btn-radio="'verified'">
+      <label class="btn btn-default" ng-model="report.status" ng-class="{'btn-success': report.status=='verified'}" ng-disabled="disabled || verificationDisabled" btn-radio="'verified'">
         <span translate>
           Verified!
         </span>
@@ -54,7 +54,7 @@
       </label>
     </p>
     <p class="btn-group btn-group-justified">
-      <label class="btn btn-default" ng-model="report.status" ng-class="{'btn-success': report.status=='verified'}" ng-disabled="disabled" btn-radio="'verified'">
+      <label class="btn btn-default" ng-model="report.status" ng-class="{'btn-success': report.status=='verified'}" ng-disabled="disabled || verificationDisabled" btn-radio="'verified'">
         <span translate>
           Verified!
         </span>
