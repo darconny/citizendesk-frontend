@@ -1,6 +1,30 @@
+<h3 translate>
+  Incoming Reports
+</h3>
+<p>&nbsp;</p>
 <ul class="list-group">
   <a class="list-group-item list-group-item-info" ng-href="#/mobile-queue">
     <span translate>Mobile reports</span>
+  </a>
+</ul>
+<h4 translate>
+  Tweets
+  <a href="#/help-tweet-queues" class="pull-right">
+    <span class="glyphicon glyphicon-question-sign"></span>
+  </a>
+</h4>
+<ul class="list-group">
+  <a ng-repeat="queue in monitors" class="list-group-item list-group-item-success" ng-href="#/monitor/{{queue._id}}" ng-show="queue.user_id._id != session.identity._id">
+    <span translate>
+      {{queue.user_id.username}}'s monitor
+    </span>
+    <span class="badge" ng-bind="queue.reports.length"></span>
+  </a>
+  <a class="list-group-item list-group-item-success" ng-href="#/my-monitor">
+    <span translate>
+      Your monitor
+    </span>
+    <span class="badge" ng-bind="myMonitor.reports.length"></span>
   </a>
   <a class="list-group-item list-group-item-warning" ng-href="#/new-twitter-search">
     <span translate>New Twitter search</span>
@@ -21,18 +45,6 @@
       <span class="badge" ng-bind="queue.reports.length"></span>
     </a>
   </div>
-  <a ng-repeat="queue in monitors" class="list-group-item list-group-item-success" ng-href="#/monitor/{{queue._id}}" ng-show="queue.user_id._id != session.identity._id">
-    <span translate>
-      {{queue.user_id.username}}'s monitor
-    </span>
-    <span class="badge" ng-bind="queue.reports.length"></span>
-  </a>
-  <a class="list-group-item list-group-item-success" ng-href="#/my-monitor">
-    <span translate>
-      Your monitor
-    </span>
-    <span class="badge" ng-bind="myMonitor.reports.length"></span>
-  </a>
   <!--li class="list-group-item">
       <a ng-href="#/web-queue">
         <span>From the web</span>
