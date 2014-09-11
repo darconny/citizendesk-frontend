@@ -12,7 +12,8 @@ angular
                 'save',
                 'getById',
                 'update',
-                'remove'
+                'remove',
+                'create'
             ];
 
         this.api = function(name, config) {

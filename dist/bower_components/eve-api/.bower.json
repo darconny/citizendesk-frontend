@@ -1,6 +1,6 @@
 {
   "name": "eve-api",
-  "version": "0.7.1",
+  "version": "0.8.0",
   "homepage": "https://github.com/sourcefabric-innovation/eve-resource",
   "description": "Angular resource services optimised for Python Eve backends",
   "keywords": [
@@ -21,13 +21,14 @@
   "devDependencies": {
     "angular-mocks": "~1.2.17"
   },
-  "_release": "0.7.1",
+  "_release": "0.8.0",
   "_resolution": {
     "type": "version",
-    "tag": "0.7.1",
-    "commit": "0c20b7510077da59aec10d3b27c843de20d0a4ba"
+    "tag": "0.8.0",
+    "commit": "4b7e8334ee3352543b5d04e66da354d5de48a5b9"
   },
   "_source": "https://github.com/sourcefabric-innovation/eve-api.git",
-  "_target": "0.7.1",
-  "_originalSource": "https://github.com/sourcefabric-innovation/eve-api.git"
+  "_target": "0.8.0",
+  "_originalSource": "https://github.com/sourcefabric-innovation/eve-api.git",
+  "_direct": true
 }
