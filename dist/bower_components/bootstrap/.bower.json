@@ -22,7 +22,7 @@
     "dist/fonts/glyphicons-halflings-regular.woff"
   ],
   "ignore": [
-    ".*",
+    "/.*",
     "_config.yml",
     "CNAME",
     "composer.json",
@@ -34,13 +34,13 @@
   "dependencies": {
     "jquery": ">= 1.9.0"
   },
-  "_release": "684e73264a",
+  "_release": "3a37633c45",
   "_resolution": {
     "type": "branch",
-    "branch": "citizendesk",
-    "commit": "684e73264a85b3f100bb23ef3ebbe9b91fe0c8de"
+    "branch": "citizendesk-dist",
+    "commit": "3a37633c45dcb235f1ec7f248c3d43a377d1e60d"
   },
-  "_source": "https://github.com/sourcefabric-innovation/citizendesk-style.git",
-  "_target": "citizendesk",
-  "_originalSource": "https://github.com/sourcefabric-innovation/citizendesk-style.git"
+  "_source": "https://github.com/sourcefabric-innovation/bootstrap.git",
+  "_target": "citizendesk-dist",
+  "_originalSource": "https://github.com/sourcefabric-innovation/bootstrap.git"
 }
